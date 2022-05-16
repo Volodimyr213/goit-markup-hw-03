@@ -36,7 +36,7 @@
 
         }
         .conteiner{
-            outline: 1px solid red;
+           
             width: 1200px;
             padding-left: 15px;
             padding-right: 15px;
@@ -44,10 +44,9 @@
 
         }
         .oll-header{
-           
-           
-        }
+            border-bottom: 1px solid #ECECEC;
 
+        }
 
 
     
