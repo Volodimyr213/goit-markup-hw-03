@@ -69,7 +69,7 @@
          line-height: 1.2;
          letter-spacing: 0.03em;
          margin-top: 24px;
-         margin-right: 93px;
+        
         margin-bottom: 25px;}
     
     .logo-head{
@@ -93,6 +93,7 @@
     }
     .site-nav{
         display: flex;
+        margin-left: 93px;
     }
     .links{
         display: flex;
@@ -101,6 +102,10 @@
     .nav-poject-link{
         
         margin-right: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
     }
     .nav-poject-link:last-child{
         margin-right: 0;
@@ -123,7 +128,7 @@
         color:var(--accent-color);
     }
   
-    .site-nav.carrent {
+    .site-nav-carrent {
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -151,8 +156,9 @@
     /* герой */
     .hero{       
         background: #2F303A;
-        height: 600px;
+        
         padding-top: 200px;
+        padding-bottom: 200px;
         
       }
 
@@ -186,18 +192,19 @@
     }
      
     /* преимущества */
-     .benefits{
+     .section{
          padding-top: 94px;
          padding-bottom: 94px;
      }
 
      .benefits-main-titl{
-         visibility: hidden;
-         height: 0;
-
-
+         
+        
+         position: fixed;
+         transform: scale(0);
 
      }
+ 
 
      .benefits-list{
          display: flex;
@@ -236,7 +243,7 @@
     
     /* чим занімаємось */
     .work-section{
-        padding-bottom: 94px;
+       
 
     }
     .work-list{
@@ -267,8 +274,7 @@
 
     /* команда */
     .team-section{
-        padding-top: 94px;
-        padding-bottom: 94px;
+        
         background: #F5F4FA
     }
     .team-card{
@@ -310,7 +316,8 @@
        
     }
     .img-description{
-        padding: 30px 59px 30px 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
 
     }
@@ -322,7 +329,7 @@
         color: var(--title-text-color);
         font-weight: 500;
         font-size: 16px;
-        line-height: 1.9;
+        line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
         
@@ -341,23 +348,25 @@
     /* футер */
     .section-footer{
         background: #2F303A;
-        height: 700px;
+      
         padding-top: 60px;
         padding-bottom: 60px;
-        height: 252px;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
     }
     .logo{
     display: inline-block;
-    margin-bottom: 20px;
+  
     }
 
     .footer-links{
-        display: inline-block;
+        display:block;
         font-style: normal;
-        margin-bottom: 9;
+        margin-bottom: 9px;
+    }
+    .footer-links:not(:last-child){
+        margin-bottom: 0;
     }
     
     .footer-links :hover,:focus{
@@ -373,9 +382,14 @@
     
     .footer-link-addess{
         color:var(--prymory-white-color);
+        
     }
-    .footer-link-email,
+    .footer-link-email{
+        
+        color: rgba(255, 255, 255, 0.6);
+    }
     .footer-link-tel{
+        
          color: rgba(255, 255, 255, 0.6);
     }
     
@@ -412,10 +426,7 @@
     }
         
         /* проекти партфоліо */
-        .main{
-            padding-top: 94px;
-            padding-bottom: 94px;
-        } 
+     
         .nav-project{
             display: flex;
             justify-content: center;
@@ -425,8 +436,8 @@
        
         
         .main-titl{
-            visibility: hidden;
-            height: 0;
+            position: fixed;
+            transform: scale(0);
            }
 
         .project-link{
@@ -435,7 +446,9 @@
         .poject-link:not(:last-child){
              margin-right: 0;
             }
-            
+
+       
+        
 
 
 
@@ -451,16 +464,18 @@
 
        
          .bakground-link{
-            flex-basis: calc((100%-90px)/3);
+            flex-basis: calc((100% - 90px) / 3);
             margin-top: 30px;
             margin-left: 30px;
-
-          
-                 
-           
-             
-                       
+                                  
             }
+            .project-card{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+
+
             /* .bakground-link:nth-child(n+7){
                 margin-bottom: 0; }
                 
