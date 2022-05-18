@@ -67,9 +67,7 @@
          font-size: 26px;
          line-height: 1.2;
          letter-spacing: 0.03em;
-         margin-top: 24px;
-        
-        margin-bottom: 25px;}
+    }
     
     .logo-head{
         color: #000;
@@ -101,10 +99,7 @@
     .nav-poject-link{
         
         margin-right: 50px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+       
     }
     .nav-poject-link:last-child{
         margin-right: 0;
@@ -142,7 +137,12 @@
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
-        color:var(--gray-color);}
+        color:var(--gray-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
     
     
     .links-link:hover,
@@ -198,9 +198,7 @@
 
      .benefits-main-titl{
          
-        
-         position: fixed;
-         transform: scale(0);
+    visibility: hidden;
 
      }
  
@@ -338,7 +336,7 @@
        
     .team-text{
         font-size: 16px;
-        line-height: 1.9;
+        line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
         }
@@ -350,48 +348,54 @@
       
         padding-top: 60px;
         padding-bottom: 60px;
+        
+    }
+    .footer-list{
+        margin-top: 20px;
+    }
+   
+   
+    .footer-link{
+        display:block;
+        font-style: normal;
+        margin-bottom: 9px;
+        color: rgba(255, 255, 255, 0.6);
+
+     
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+      
+    }
+   
+   
+    
+    .logo-footer{
+        color:var(--prymory-white-color);
+        
+
+    }
+    .footer-link-carrent{
+        color:var(--prymory-white-color)
+        
+    }
+    .footer-link-carrent:hover,:focus{
+        color: var(--accent-color);
+    }
+     
+    
+    .footer-link-cotaсt{
+                color: rgba(255, 255, 255, 0.6);
+                
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
     }
-    .logo{
-    display: inline-block;
-  
-    }
-
-    .footer-links{
-        display:block;
-        font-style: normal;
-        margin-bottom: 9px;
-    }
-    .footer-links:not(:last-child){
-        margin-bottom: 0;
-    }
-    
-    .footer-links :hover,:focus{
+    .footer-link-cotaсt:hover,:focus{
         color: var(--accent-color);
-        
     }
     
-    .logo-footer{
-        color:var(--prymory-white-color);
 
-    }
-    
-    
-    .footer-link-addess{
-        color:var(--prymory-white-color);
-        
-    }
-    .footer-link-email{
-        
-        color: rgba(255, 255, 255, 0.6);
-    }
-    .footer-link-tel{
-        
-         color: rgba(255, 255, 255, 0.6);
-    }
-    
     /* Портфоліо кнопки */
     .button-activ{
         color: var(--prymory-white-color);
@@ -435,8 +439,7 @@
        
         
         .main-titl{
-            position: fixed;
-            transform: scale(0);
+            visibility: hidden;
            }
 
         .project-link{
