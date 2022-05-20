@@ -78,6 +78,7 @@
     
     /* навігація */
     .nav-main{
+        margin-left: 93px;
 
       font-weight: 500;
       font-size: 14px;
@@ -90,7 +91,7 @@
     }
     .site-nav{
         display: flex;
-        margin-left: 93px;
+        
     }
     .links{
         display: flex;
@@ -153,12 +154,26 @@
 
 
     /* герой */
-    .hero{       
-        background: #2F303A;
+    .hero{  
+        
+        max-width: 1600px;
+        height: 600px;
+        background: #2F303A; 
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/Img9.jpg);
+      
+        
+        
         
         padding-top: 200px;
         padding-bottom: 200px;
         
+      }
+      .overlay{
+       
+         
       }
 
 
@@ -198,9 +213,21 @@
 
      .benefits-main-titl{
          
-    visibility: hidden;
 
      }
+     .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
  
 
      .benefits-list{
@@ -226,6 +253,38 @@
         margin-left: 30px;
         
     }
+    .benefits-link::before{
+        display: block;
+        content: '';
+        
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+    .icon-antenna::before{
+        background-image: url(../images/anttena.svg);
+        background-size: 65px 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+    .icon-watch::before{
+        background-image: url(../images/watch.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .icon-pc::before{
+        background-image: url(../images/pc.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .icon-space::before{
+        background-image: url(../images/space.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
  
 
     .benefits-text{
@@ -240,6 +299,7 @@
     
     /* чим занімаємось */
     .work-section{
+        padding-top: 0;
        
 
     }
@@ -351,7 +411,11 @@
         
     }
     .footer-list{
-        margin-top: 20px;
+       
+    }
+    .section-adress{
+
+     margin-top: 20px;   
     }
    
    
@@ -366,6 +430,9 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
       
+    }
+    .footer-link:last-child{
+        margin-bottom: 0px;
     }
    
    
@@ -432,8 +499,7 @@
      
         .nav-project{
             display: flex;
-            justify-content: center;
-            
+            justify-content: center;  
             margin-bottom: 50px;
         }
        
@@ -445,15 +511,10 @@
         .project-link{
             margin-right: 8px;}
             
-        .poject-link:not(:last-child){
+        .poject-link:last-child{
              margin-right: 0;
             }
-
-       
-        
-
-
-
+     
         .bakground-list{
             display: flex;
             flex-wrap: wrap;
@@ -474,17 +535,13 @@
             .project-card{
                 padding-top: 20px;
                 padding-bottom: 20px;
+                padding-left: 24px;
+                padding-right: 24px;
+                border: 1px solid #EEEEEE;
             }
 
 
 
-            /* .bakground-link:nth-child(n+7){
-                margin-bottom: 0; }
-                
-            .bakground-link:nth-child(3n){
-                margin-right: 0;
-            }
-            */
        
 
         .project-titl{
