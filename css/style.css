@@ -49,17 +49,6 @@
         }
 
 
-    
-
-
-
-
-
-
-
-
-
-
     /* Логотип */
     .logo{color:var(--accent-color);
          font-family: 'Raleway',sans-serif;
@@ -156,14 +145,6 @@
     /* герой */
     .hero{  
         
-        max-width: 1600px;
-        height: 600px;
-        background: #2F303A; 
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), 
-            url(../images/Img9.jpg);
-      
         
         
         
@@ -172,7 +153,16 @@
         
       }
       .overlay{
-       
+        max-width: 1600px;
+        height: 600px;
+        background: #2F303A; 
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/Img9.jpg);
+            margin: 0 auto;
+      
+        
          
       }
 
@@ -503,10 +493,6 @@
             margin-bottom: 50px;
         }
        
-        
-        .main-titl{
-            visibility: hidden;
-           }
 
         .project-link{
             margin-right: 8px;}
